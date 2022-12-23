@@ -21,6 +21,31 @@ class SignupPage extends StatelessWidget {
                 padding: const EdgeInsets.fromLTRB(20, 20, 20, 70),
                 
               ),
+               Container(
+                padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
+                child: TextField(
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(90.0),
+                    ),
+                    labelText: 'First Name',
+                  ),
+                ),
+              ),
+
+               Container(
+                padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
+                child: TextField(
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(90.0),
+                    ),
+                    labelText: 'Last Name',
+                  ),
+                ),
+              ),
+
+
               Container(
                 padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
                 child: TextField(
