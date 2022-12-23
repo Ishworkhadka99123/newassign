@@ -72,7 +72,7 @@ class LoginPage extends StatelessWidget {
                     minimumSize: const Size.fromHeight(50),
                   ),
                   child: const Text('Register'),
-                  onPressed: () {},
+                  onPressed: () {} ,
                 ),),
               TextButton(
                 onPressed: () {},
