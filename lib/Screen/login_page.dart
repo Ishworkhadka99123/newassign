@@ -1,3 +1,4 @@
+import 'package:doctor_appoinment_app/Screen/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -10,7 +11,7 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('My apps'),
+          title: const Text('Book Your Time'),
         ),
         body: Center(
           child: Column(
@@ -19,9 +20,9 @@ class LoginPage extends StatelessWidget {
             children: <Widget>[
               Container(
                 padding: const EdgeInsets.fromLTRB(20, 20, 20, 70),
-                child: const FlutterLogo(
-                  size: 40,
-                ),
+                // child: const FlutterLogo(
+                //   size: 40,
+                // ),
               ),
               Container(
                 padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
@@ -61,7 +62,9 @@ class LoginPage extends StatelessWidget {
                     minimumSize: const Size.fromHeight(50),
                   ),
                   child: const Text('Log In'),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/DashboardPage');
+                  },
                 ),),
               Container(
                 height: 80,
@@ -72,10 +75,16 @@ class LoginPage extends StatelessWidget {
                     minimumSize: const Size.fromHeight(50),
                   ),
                   child: const Text('Register'),
-                  onPressed: () {} ,
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/SignupPage');
+                  } ,
                 ),),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+
+
+                },
+                
                 child: const Text(
                   'Forgot Password?',
                   style: TextStyle(color: Colors.black, fontFamily: 'Montserrat Italic'),

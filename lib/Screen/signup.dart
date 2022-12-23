@@ -10,7 +10,7 @@ class SignupPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('My apps'),
+          title: const Text('Book Your Time'),
         ),
         body: Center(
           child: Column(
@@ -19,9 +19,9 @@ class SignupPage extends StatelessWidget {
             children: <Widget>[
               Container(
                 padding: const EdgeInsets.fromLTRB(20, 20, 20, 70),
-                child: const FlutterLogo(
-                  size: 40,
-                ),
+                // child: const FlutterLogo(
+                //   size: 40,
+                // ),
               ),
               Container(
                 padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
@@ -74,7 +74,9 @@ class SignupPage extends StatelessWidget {
                     minimumSize: const Size.fromHeight(50),
                   ),
                   child: const Text('SignUp '),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/Dashboard');
+                  },
                 ),),
               // Container(
               //   height: 80,
