@@ -18,7 +18,7 @@ void main() {
 
       initialRoute: '/LoginPage',
 
-      // theme: getApplicationTheme(),
+       theme: getApplicationTheme(),
 
 
       routes: {

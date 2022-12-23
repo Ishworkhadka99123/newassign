@@ -72,6 +72,10 @@ class LoginPage extends StatelessWidget {
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     textStyle: const TextStyle(fontFamily: 'Montserrat Bold'),
+                    backgroundColor: Colors.blue,
+                    shape:RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30)
+                    ),
                     minimumSize: const Size.fromHeight(50),
                   ),
                   child: const Text('Register'),

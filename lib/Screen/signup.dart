@@ -75,7 +75,7 @@ class SignupPage extends StatelessWidget {
                   ),
                   child: const Text('SignUp '),
                   onPressed: () {
-                    Navigator.pushNamed(context, '/Dashboard');
+                    Navigator.pushNamed(context, '/DashboardPage');
                   },
                 ),),
               // Container(
