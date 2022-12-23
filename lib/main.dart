@@ -1,3 +1,5 @@
+
+import 'package:doctor_appoinment_app/Screen/signup.dart';
 import 'package:doctor_appoinment_app/theme/theme_data.dart';
 import 'package:flutter/material.dart';
 
@@ -21,6 +23,8 @@ void main() {
       routes: {
         '/LoginPage':(context) => const LoginPage(),
         '/':(context) => const SplashScreen(),
+        '/':(context) => SignupPage(),
+
       },
     ),
   );
