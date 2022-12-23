@@ -14,7 +14,8 @@ class LoginPage extends StatelessWidget {
           title: const Text('Book Your Time'),
         ),
         body: Center(
-          child: Column(
+          child: 
+          Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
@@ -22,6 +23,8 @@ class LoginPage extends StatelessWidget {
                 padding: const EdgeInsets.fromLTRB(20, 20, 20, 70),
                 
               ),
+
+          
               Container(
                 padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
                 child: TextField(
