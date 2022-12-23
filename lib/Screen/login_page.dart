@@ -20,9 +20,7 @@ class LoginPage extends StatelessWidget {
             children: <Widget>[
               Container(
                 padding: const EdgeInsets.fromLTRB(20, 20, 20, 70),
-                // child: const FlutterLogo(
-                //   size: 40,
-                // ),
+                
               ),
               Container(
                 padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),

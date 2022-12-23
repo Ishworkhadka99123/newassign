@@ -19,9 +19,7 @@ class SignupPage extends StatelessWidget {
             children: <Widget>[
               Container(
                 padding: const EdgeInsets.fromLTRB(20, 20, 20, 70),
-                // child: const FlutterLogo(
-                //   size: 40,
-                // ),
+                
               ),
               Container(
                 padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
@@ -78,24 +76,7 @@ class SignupPage extends StatelessWidget {
                     Navigator.pushNamed(context, '/DashboardPage');
                   },
                 ),),
-              // Container(
-              //   height: 80,
-              //   padding: const EdgeInsets.all(20),
-              //   child: ElevatedButton(
-              //     style: ElevatedButton.styleFrom(
-              //       textStyle: const TextStyle(fontFamily: 'Montserrat Bold'),
-              //       minimumSize: const Size.fromHeight(50),
-              //     ),
-              //     child: const Text('Register'),
-              //     onPressed: () {},
-              //   ),),
-              // TextButton(
-              //   onPressed: () {},
-              //   child: const Text(
-              //     'Forgot Password?',
-              //     style: TextStyle(color: Colors.black, fontFamily: 'Montserrat Italic'),
-              //   ),
-              // ),
+             
             ],
           ),
         ));
