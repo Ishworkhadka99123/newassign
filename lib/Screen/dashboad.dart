@@ -12,12 +12,12 @@ class DashboardScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Dashboard'),
         centerTitle: true,
-        backgroundColor: const Color.fromARGB(255, 48, 43, 35),
+        backgroundColor: Color.fromARGB(255, 116, 80, 22),
       ),
       body: Container(
         child: Row(children: [
           Card(
-            color: const Color.fromARGB(255, 48, 43, 35),
+            color: Color.fromARGB(255, 90, 63, 18),
             clipBehavior: Clip.hardEdge,
             child: InkWell(
               splashColor: Colors.blue.withAlpha(30),
