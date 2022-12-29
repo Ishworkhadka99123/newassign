@@ -5,6 +5,7 @@ ThemeData getApplicationThemeData() {
     primaryColor: HexColor.fromHex("#ED9728"),
     primaryColorLight: HexColor.fromHex("#B3ED9728"),
     primaryColorDark: HexColor.fromHex("#d17d11"),
+    // hvbsahb
     disabledColor: HexColor.fromHex("#707070"),
     fontFamily: 'Open Sans',
     buttonTheme: ButtonThemeData(
