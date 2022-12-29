@@ -46,11 +46,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
     _showMessage(status);
     print(status);
 
-    // Get the batch object from the list of batches
-    // final batch = _lstBatches
-    //     .firstWhere((element) => element.batchName == _dropDownValue);
+    Get the batch object from the list of batches
+    final batch = _lstBatches
+        .firstWhere((element) => element.batchName == _dropDownValue);
 
-    // student.batch.target = batch;
+    student.batch.target = batch;
   }
 
   @override
