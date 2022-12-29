@@ -17,7 +17,7 @@ class DashboardScreen extends StatelessWidget {
       body: Container(
         child: Row(children: [
           Card(
-            color: Color.fromARGB(255, 90, 63, 18),
+            color: Color.fromARGB(255, 116, 80, 22),
             clipBehavior: Clip.hardEdge,
             child: InkWell(
               splashColor: Colors.blue.withAlpha(30),
