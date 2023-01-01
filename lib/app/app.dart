@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Accesories Store',
       debugShowCheckedModeBanner: false,
       theme: getApplicationThemeData(),
-      initialRoute: '/login',
+      initialRoute: '/login_page',
       routes: {
         '/login_page': (context) => const LoginPage(),
         '/register_page': (context) => const RegisterScreen(),

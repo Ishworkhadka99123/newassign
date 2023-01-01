@@ -10,69 +10,71 @@ class LoginPage extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Login Screen'),
         ),
-        body: Center(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Container(
-                padding: const EdgeInsets.fromLTRB(20, 20, 20, 70),
-              ),
-              Container(
-                padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
-                child: TextField(
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(90.0),
+        body: SingleChildScrollView(
+          child: Center(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Container(
+                  padding: const EdgeInsets.fromLTRB(20, 20, 20, 70),
+                ),
+                Container(
+                  padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
+                  child: TextField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(90.0),
+                      ),
+                      labelText: 'Email',
                     ),
-                    labelText: 'Email',
                   ),
                 ),
-              ),
-              Container(
-                padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
-                child: TextField(
-                  obscureText: true,
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(90.0),
+                Container(
+                  padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
+                  child: TextField(
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(90.0),
+                      ),
+                      labelText: 'Password',
                     ),
-                    labelText: 'Password',
                   ),
                 ),
-              ),
-              Container(
-                height: 80,
-                padding: const EdgeInsets.all(20),
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    minimumSize: const Size.fromHeight(50),
+                Container(
+                  height: 80,
+                  padding: const EdgeInsets.all(20),
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      minimumSize: const Size.fromHeight(50),
+                    ),
+                    child: const Text('Log In'),
+                    onPressed: () {},
                   ),
-                  child: const Text('Log In'),
+                ),
+                Container(
+                  height: 80,
+                  padding: const EdgeInsets.all(20),
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      minimumSize: const Size.fromHeight(50),
+                    ),
+                    child: const Text('Register'),
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/register_page');
+                    },
+                  ),
+                ),
+                TextButton(
                   onPressed: () {},
-                ),
-              ),
-              Container(
-                height: 80,
-                padding: const EdgeInsets.all(20),
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    minimumSize: const Size.fromHeight(50),
+                  child: Text(
+                    'Forgot Password?',
+                    style: TextStyle(color: Colors.grey[600]),
                   ),
-                  child: const Text('Register'),
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/register_page');
-                  },
                 ),
-              ),
-              TextButton(
-                onPressed: () {},
-                child: Text(
-                  'Forgot Password?',
-                  style: TextStyle(color: Colors.grey[600]),
-                ),
-              ),
-            ],
+              ],
+            ),
           ),
         ));
   }

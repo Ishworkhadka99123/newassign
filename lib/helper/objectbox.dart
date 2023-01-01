@@ -1,4 +1,5 @@
-import 'package:login/model/register_request_model.dart';
+import 'package:doctor_appoinment_app/objectbox.g.dart';
+import 'package:objectbox/objectbox.dart';
 import 'package:path_provider/path_provider.dart';
 import '../model/register_request_model.dart';
 
@@ -17,10 +18,7 @@ class ObjectBoxInstance {
   // Initialization of ObjectBox
   static Future<ObjectBoxInstance> init() async {
     var dir = await getApplicationDocumentsDirectory();
-    final store = Store(
-      getObjectBoxModel(),
-      directory: '${dir.path}/student_course',
-    );
+    final store = Store(getObjectBoxModel(), directory: '${dir.path},user');
     return ObjectBoxInstance(store);
   }
 

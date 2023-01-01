@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:motion_toast/motion_toast.dart';
 
 import '../model/register_request_model.dart';
 import '../repository/user_repo.dart';
@@ -15,11 +16,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
   final String _dropDownValue = "";
 
   final _key = GlobalKey<FormState>();
-  final _fnameController = TextEditingController(text: '');
-  final _lnameController = TextEditingController(text: '');
-  final _emailController = TextEditingController(text: '');
-  final _usernameController = TextEditingController(text: '');
-  final _passwordController = TextEditingController(text: '');
+  final _fnameController = TextEditingController(text: 'Ishwor');
+  final _lnameController = TextEditingController(text: 'Khadka');
+  final _emailController = TextEditingController(text: 'ishwor123@gmail.com');
+  final _usernameController = TextEditingController(text: 'Ishworkhadka');
+  final _passwordController = TextEditingController(text: 'password');
 
   _showMessage(int status) {
     if (status > 0) {
@@ -41,14 +42,15 @@ class _RegisterScreenState extends State<RegisterScreen> {
       _passwordController.text,
     );
 
+    int status = await UserRepositoryImpl().addUser(user);
+    _showMessage(status);
+    print(status);
+
     // Get the batch object from the list of batches
     // final batch = _lstBatches
     //     .firstWhere((element) => element.batchName == _dropDownValue);
 
     // student.batch.target = batch;
-
-    int status = await UserRepositoryImpl().addUser(user);
-    _showMessage(status);
   }
 
   @override

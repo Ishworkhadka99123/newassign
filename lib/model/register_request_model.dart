@@ -1,4 +1,5 @@
 import 'package:objectbox/objectbox.dart';
+import 'package:doctor_appoinment_app/model/register_request_model.dart';
 
 @Entity()
 class User {
