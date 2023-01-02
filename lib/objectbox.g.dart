@@ -20,38 +20,38 @@ export 'package:objectbox/objectbox.dart'; // so that callers only have to impor
 
 final _entities = <ModelEntity>[
   ModelEntity(
-      id: const IdUid(1, 7900098376452279613),
+      id: const IdUid(1, 6616086305974267465),
       name: 'User',
-      lastPropertyId: const IdUid(6, 4192656373661732072),
+      lastPropertyId: const IdUid(6, 6591890113241131482),
       flags: 0,
       properties: <ModelProperty>[
         ModelProperty(
-            id: const IdUid(1, 7698359618539931854),
+            id: const IdUid(1, 1886969002220196653),
             name: 'regId',
             type: 6,
             flags: 129),
         ModelProperty(
-            id: const IdUid(2, 64068039213634934),
+            id: const IdUid(2, 8032906692021403254),
             name: 'fname',
             type: 9,
             flags: 0),
         ModelProperty(
-            id: const IdUid(3, 1657260448612259191),
+            id: const IdUid(3, 4362939018989856057),
             name: 'lname',
             type: 9,
             flags: 0),
         ModelProperty(
-            id: const IdUid(4, 17131875162877174),
+            id: const IdUid(4, 4290126684152729585),
             name: 'email',
             type: 9,
             flags: 0),
         ModelProperty(
-            id: const IdUid(5, 5314195109410829498),
+            id: const IdUid(5, 7465998691317805114),
             name: 'username',
             type: 9,
             flags: 0),
         ModelProperty(
-            id: const IdUid(6, 4192656373661732072),
+            id: const IdUid(6, 6591890113241131482),
             name: 'password',
             type: 9,
             flags: 0)
@@ -80,7 +80,7 @@ Future<Store> openStore(
 ModelDefinition getObjectBoxModel() {
   final model = ModelInfo(
       entities: _entities,
-      lastEntityId: const IdUid(1, 7900098376452279613),
+      lastEntityId: const IdUid(1, 6616086305974267465),
       lastIndexId: const IdUid(0, 0),
       lastRelationId: const IdUid(0, 0),
       lastSequenceId: const IdUid(0, 0),

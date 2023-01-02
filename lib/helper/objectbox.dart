@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:doctor_appoinment_app/objectbox.g.dart';
 import 'package:objectbox/objectbox.dart';
 import 'package:path_provider/path_provider.dart';
@@ -30,4 +32,6 @@ class ObjectBoxInstance {
   List<User> getAllUser() {
     return _user.getAll();
   }
+
+  FutureOr<User?>? loginUser(String email, String password) {}
 }

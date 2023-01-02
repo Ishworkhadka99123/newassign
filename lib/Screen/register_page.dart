@@ -44,7 +44,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
     int status = await UserRepositoryImpl().addUser(user);
     _showMessage(status);
-    print(status);
 
     // Get the batch object from the list of batches
     // final batch = _lstBatches

@@ -2,9 +2,11 @@ import '../data_source/local_data_source/register_request_model.dart';
 import '../model/register_request_model.dart';
 
 abstract class UserRepository {
-  Future<List<User>> getusers();
+  Future<List<User>> getAllUser();
+
   Future<int> addUser(User user);
-  // Future<Student?>
+
+  Future<User?> loginUser(String email, String password);
 }
 
 class UserRepositoryImpl extends UserRepository {
@@ -14,11 +16,12 @@ class UserRepositoryImpl extends UserRepository {
   }
 
   @override
-  Future<List<User>> getusers() {
-    return UserDataSource().getUser();
+  Future<List<User>> getAllUser() {
+    return UserDataSource().getAllUser();
   }
 
-  // Future<Student?> loginStudent(String username, String password) {
-  //   return StudentDataSource().loginStudent(username, password);
-  // }
+  @override
+  Future<User?> loginUser(String email, String password) {
+    return UserDataSource().loginUser(email, password);
+  }
 }
