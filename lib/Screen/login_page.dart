@@ -19,7 +19,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Future<int> loginUser() async {
     User? status = await UserRepositoryImpl()
         .loginUser(_emailController.text, _passwordController.text);
-    // _showMessage(status != null ? status.uId : 0);
+    // _showMessage(status != null ? status.regId : 0);
     return status != null ? status.regId : 0;
   }
 
