@@ -12,7 +12,7 @@ class DashboardScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Dashboard'),
         centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 116, 80, 22),
+        backgroundColor: Color.fromARGB(255, 40, 108, 209),
       ),
       body: Container(
         child: Row(children: [
