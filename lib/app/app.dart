@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Accesories Store',
+      title: 'Doctor Booking Appointment App',
       debugShowCheckedModeBanner: false,
       theme: getApplicationThemeData(),
       initialRoute: '/login_page',
