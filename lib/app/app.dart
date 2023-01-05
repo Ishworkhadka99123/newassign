@@ -1,3 +1,4 @@
+import 'package:doctor_appoinment_app/Screen/register_page.dart';
 import 'package:doctor_appoinment_app/app/theme.dart';
 import 'package:flutter/material.dart';
 
